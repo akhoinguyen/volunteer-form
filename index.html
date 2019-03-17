@@ -23,18 +23,37 @@
         <legend>Personal details</legend>
 
         <label for="name">Full name</label>
-        <input id="name" type="text" name="name">
+        <input id="name" type="text" name="name" required>
+        <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
 
         <label for="nickname">What should we call you?</label>
         <input id="nickname" type="text" name="name">
+        <p>What all your friends call you, e.g. “Liz”.</p>
 
         <label for="dob">Date of birth</label>
         <input id="dob" type="date" name="name">
 
         <label for="teesize">T-shirt size</label>
-        <select id="teesize" placeholder="Select a t-shirt size">
-          <option></option>
+        <select id="teesize">
+          <optgroup label="Select a t-shirt size">
+            <option>Fitted: XS</option>
+            <option>Fitted: S</option>
+            <option>Fitted: M</option>
+            <option>Fitted: L</option>
+            <option>Fitted: XL</option>
+            <option>Straight-cut: XS</option>
+            <option>Straight-cut: S</option>
+            <option>Straight-cut: M</option>
+            <option>Straight-cut: L</option>
+            <option>Straight-cut: XL</option>
+          </optgroup>
         </select>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="phone">Phone number <span>(optional)</span></label>
+        <input id="phone" type="number">
       </fieldset>
     </form>
   </main>
