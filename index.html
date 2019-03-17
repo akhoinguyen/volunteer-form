@@ -35,25 +35,52 @@
 
         <label for="teesize">T-shirt size</label>
         <select id="teesize">
-          <optgroup label="Select a t-shirt size">
-            <option>Fitted: XS</option>
-            <option>Fitted: S</option>
-            <option>Fitted: M</option>
-            <option>Fitted: L</option>
-            <option>Fitted: XL</option>
-            <option>Straight-cut: XS</option>
-            <option>Straight-cut: S</option>
-            <option>Straight-cut: M</option>
-            <option>Straight-cut: L</option>
-            <option>Straight-cut: XL</option>
-          </optgroup>
+          <option value="0">Select a t-shirt size</option>
+          <option>Fitted: XS</option>
+          <option>Fitted: S</option>
+          <option>Fitted: M</option>
+          <option>Fitted: L</option>
+          <option>Fitted: XL</option>
+          <option>Straight-cut: XS</option>
+          <option>Straight-cut: S</option>
+          <option>Straight-cut: M</option>
+          <option>Straight-cut: L</option>
+          <option>Straight-cut: XL</option>
         </select>
 
         <label for="email">Email</label>
         <input id="email" type="email" required>
 
         <label for="phone">Phone number <span>(optional)</span></label>
-        <input id="phone" type="number">
+        <input id="phone" type="tel">
+      </fieldset>
+
+      <fieldset>
+        <legend>Address</legend>
+
+        <label for="address">Street address</label>
+        <input id="address" type="text">
+
+        <label for="city">City</label>
+        <input id="city" type="text">
+
+        <label for="province">Province</label>
+        <select id="province">
+          <option value="0">Select a province</option>
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nova Scotia</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </select>
       </fieldset>
     </form>
   </main>
