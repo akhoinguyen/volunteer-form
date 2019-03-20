@@ -18,7 +18,7 @@
   </header>
 
   <main>
-    <form class="" action="index.html" method="post">
+    <form action="index.html" method="post">
       <fieldset>
         <legend>Personal details</legend>
 
@@ -35,7 +35,7 @@
 
         <label for="teesize">T-shirt size</label>
         <select id="teesize">
-          <option value="0">Select a t-shirt size</option>
+          <option value="">Select a t-shirt size</option>
           <option>Fitted: XS</option>
           <option>Fitted: S</option>
           <option>Fitted: M</option>
@@ -66,7 +66,7 @@
 
         <label for="province">Province</label>
         <select id="province">
-          <option value="0">Select a province</option>
+          <option value="">Select a province</option>
           <option>Alberta</option>
           <option>British Columbia</option>
           <option>Manitoba</option>
@@ -105,6 +105,61 @@
         <input type="checkbox" id="activity-8" name="activities">
         <label for="activity-8">Managing people</label>
       </fieldset>
+
+      <fieldset>
+        <legend>Do you have any experience with the following?</legend>
+        <input type="checkbox" id="experience-1" name="exp">
+        <label for="experience-1">Shovels</label>
+        <input type="checkbox" id="experience-2" name="exp">
+        <label for="experience-2">Hand-held GPS</label>
+        <input type="checkbox" id="experience-3" name="exp">
+        <label for="experience-3">Writing &amp; blogging</label>
+        <input type="checkbox" id="experience-4" name="exp">
+        <label for="experience-4">Photography</label>
+        <input type="checkbox" id="experience-5" name="exp">
+        <label for="experience-5">Trail &amp; hill climbing</label>
+        <input type="checkbox" id="experience-6" name="exp">
+        <label for="experience-6">Bush craft</label>
+        <input type="checkbox" id="experience-7" name="exp">
+        <label for="experience-7">ATVs</label>
+        <input type="checkbox" id="experience-8" name="exp">
+        <label for="experience-8">Plant identification</label>
+        <input type="checkbox" id="experience-9" name="exp">
+        <label for="experience-9">Special event planning</label>
+        <input type="checkbox" id="experience-10" name="exp">
+        <label for="experience-10">Speaking to groups</label>
+      </fieldset>
+
+      <div>
+        <div>
+          <h2>Do you have a valid driver’s license?</h2>
+          <input id="license-y" type="radio" name="license">
+          <label for="license-y">Yes</label>
+          <input id="license-n" type="radio" name="license">
+          <label for="license-n">No</label>
+        </div>
+
+        <div>
+          <h2>Do you have a pick-up truck you’d be willing to use?</h2>
+          <input id="pickup-y" type="radio" name="pickup">
+          <label for="pickup-y">Yes</label>
+          <input id="pickup-n" type="radio" name="pickup">
+          <label for="pickup-n">No</label>
+        </div>
+
+        <div>
+          <h2>Do you have up-to-date first-aid certification?</h2>
+          <input id="first-aid-y" type="radio" name="firt-aid">
+          <label for="first-aid-y">Yes</label>
+          <input id="first-aid-n" type="radio" name="firt-aid">
+          <label for="first-aid-n">No</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="cmt">Please let us know any comments or questions you may have.<span> (optional)</span></label>
+        <textarea id="cmt"></textarea>
+      </div>
     </form>
   </main>
 
