@@ -8,33 +8,31 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Apply to be a tree planter</h1>
-    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  <header class="island-1-2 push-2">
+    <h1 class="push-1-2 pad-t-1-2 bold">Apply to be a tree planter</h1>
+    <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
 
-  <main>
+  <main class="gutter-1-2">
     <form action="index.html" method="post">
-      <fieldset>
-        <legend>Personal details</legend>
 
-        <label for="name">Full name</label>
+      <fieldset class="push pad-b-1-2">
+        <legend class="giga push pad-b-1-4">Personal details</legend>
+
+        <label class="push-1-8" for="name">Full name</label>
         <input id="name" name="name" required>
-        <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-
-        <label for="nickname">What should we call you?</label>
+        <p class="micro italic pad-t-1-8">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+        <label class="push-1-8" for="nickname">What should we call you?</label>
         <input id="nickname" name="name">
-        <p>What all your friends call you, e.g. “Liz”.</p>
-
-        <label for="dob">Date of birth</label>
-        <input id="dob" type="date">
-
-        <label for="teesize">T-shirt size</label>
-        <select id="teesize">
+        <p class="micro italic pad-t-1-8">What all your friends call you, e.g. “Liz”.</p>
+        <label class="push-1-8" for="dob">Date of birth</label>
+        <input class="push" id="dob" type="date">
+        <label class="push-1-8" for="teesize">T-shirt size</label>
+        <select class="push" id="teesize">
           <option value="">Select a t-shirt size</option>
           <option>Fitted: XS</option>
           <option>Fitted: S</option>
@@ -47,25 +45,25 @@
           <option>Straight-cut: L</option>
           <option>Straight-cut: XL</option>
         </select>
-
-        <label for="email">Email</label>
-        <input id="email" type="email" required>
-
-        <label for="phone">Phone number <span>(optional)</span></label>
+        <label class="push-1-8" for="email">Email</label>
+        <input class="push" id="email" type="email" required>
+        <label class="push-1-8" for="phone">Phone number <span>(optional)</span></label>
         <input id="phone" type="tel">
       </fieldset>
 
+      <hr class="push pad-b">
+
       <fieldset>
-        <legend>Address</legend>
+        <legend class="giga push pad-b-1-4 pad-t-1-4">Address</legend>
 
-        <label for="address">Street address</label>
-        <input id="address">
+        <label class="push-1-8" for="address">Street address</label>
+        <input class="push" id="address">
 
-        <label for="city">City</label>
-        <input id="city">
+        <label class="push-1-8 pad-t-1-2" for="city">City</label>
+        <input class="push" id="city">
 
-        <label for="province">Province</label>
-        <select id="province">
+        <label class="push-1-8 pad-t-1-2" for="province">Province</label>
+        <select class="push" id="province">
           <option value="">Select a province</option>
           <option>Alberta</option>
           <option>British Columbia</option>
@@ -81,8 +79,7 @@
           <option>Saskatchewan</option>
           <option>Yukon</option>
         </select>
-
-        <label for="postal">Postal code</label>
+        <label class="push-1-8 pad-t-1-2" for="postal">Postal code</label>
         <input id="postal">
       </fieldset>
 
@@ -159,6 +156,10 @@
       <div>
         <label for="cmt">Please let us know any comments or questions you may have.<span> (optional)</span></label>
         <textarea id="cmt"></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Apply</button>
       </div>
     </form>
   </main>
