@@ -10,3 +10,7 @@ header {
 fieldset {
   border-top: 0;
 }
+
+.block label {
+  display: block;
+}
