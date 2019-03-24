@@ -69,54 +69,67 @@
 
       <fieldset class="push pad-b">
         <legend class="giga push pad-b-1-4 pad-t-1-4">Address</legend>
-
-        <label class="push-1-8" for="address">Street address</label>
-        <input class="push" id="address">
-
-        <label class="push-1-8 pad-t-1-2" for="city">City</label>
-        <input class="push" id="city">
-
-        <label class="push-1-8 pad-t-1-2" for="province">Province</label>
-        <select class="push" id="province">
-          <option value="">Select a province</option>
-          <option>Alberta</option>
-          <option>British Columbia</option>
-          <option>Manitoba</option>
-          <option>New Brunswick</option>
-          <option>Newfoundland &amp; Labrador</option>
-          <option>Northwest Territories</option>
-          <option>Nova Scotia</option>
-          <option>Nunavut</option>
-          <option>Ontario</option>
-          <option>Prince Edward Island</option>
-          <option>Québec</option>
-          <option>Saskatchewan</option>
-          <option>Yukon</option>
-        </select>
-        <label class="push-1-8 pad-t-1-2" for="postal">Postal code</label>
-        <input id="postal">
+        <div class="grid address-grid">
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8" for="address">Street address</label>
+            <input class="push" id="address">
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8 pad-t-1-2" for="city">City</label>
+            <input class="push" id="city">
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8 pad-t-1-2" for="province">Province</label>
+            <select class="push" id="province">
+              <option value="">Select a province</option>
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland &amp; Labrador</option>
+              <option>Northwest Territories</option>
+              <option>Nova Scotia</option>
+              <option>Nunavut</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Québec</option>
+              <option>Saskatchewan</option>
+              <option>Yukon</option>
+            </select>
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8 pad-t-1-2" for="postal">Postal code</label>
+            <input id="postal">
+          </div>
+        </div>
       </fieldset>
 
       <hr class="push pad-b">
 
       <fieldset class="block">
         <legend class="giga push-1-4 pad-b-1-8 pad-t-1-4">What activities are you interested in helping with?</legend>
-        <input type="checkbox" id="activity-1" name="activities">
-        <label class="push-1-4" for="activity-1">Digging holes</label>
-        <input type="checkbox" id="activity-2" name="activities">
-        <label class="push-1-4" for="activity-2">Getting dirty</label>
-        <input type="checkbox" id="activity-3" name="activities">
-        <label class="push-1-4" for="activity-3">Lifting heavy objects</label>
-        <input type="checkbox" id="activity-4" name="activities">
-        <label class="push-1-4" for="activity-4">Driving people</label>
-        <input type="checkbox" id="activity-5" name="activities">
-        <label class="push-1-4" for="activity-5">Transporting trees</label>
-        <input type="checkbox" id="activity-6" name="activities">
-        <label class="push-1-4" for="activity-6">Taking photos</label>
-        <input type="checkbox" id="activity-7" name="activities">
-        <label class="push-1-4" for="activity-7">Online publishing</label>
-        <input type="checkbox" id="activity-8" name="activities">
-        <label class="push-1-4" for="activity-8">Managing people</label>
+        <div class="grid">
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <input type="checkbox" id="activity-1" name="activities">
+            <label class="push-1-4" for="activity-1">Digging holes</label>
+            <input type="checkbox" id="activity-2" name="activities">
+            <label class="push-1-4" for="activity-2">Getting dirty</label>
+            <input type="checkbox" id="activity-3" name="activities">
+            <label class="push-1-4" for="activity-3">Lifting heavy objects</label>
+            <input type="checkbox" id="activity-4" name="activities">
+            <label class="push-1-4" for="activity-4">Driving people</label>
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <input type="checkbox" id="activity-5" name="activities">
+            <label class="push-1-4" for="activity-5">Transporting trees</label>
+            <input type="checkbox" id="activity-6" name="activities">
+            <label class="push-1-4" for="activity-6">Taking photos</label>
+            <input type="checkbox" id="activity-7" name="activities">
+            <label class="push-1-4" for="activity-7">Online publishing</label>
+            <input type="checkbox" id="activity-8" name="activities">
+            <label class="push-1-4" for="activity-8">Managing people</label>
+          </div>
+        </div>
       </fieldset>
 
       <fieldset class="block push-2">
@@ -146,7 +159,7 @@
       <hr class="push pad-b">
 
       <fieldset class="push pad-b">
-<legend class="hidden">nothing</legend>
+        <legend class="hidden">nothing</legend>
         <div class="push-1-2">
           <h2 class="giga push-1-2">Do you have a valid driver’s license?</h2>
           <input id="license-y" type="radio" name="license">
@@ -182,7 +195,7 @@
       <hr class="push-1-4 pad-b-1-4">
 
       <div>
-        <button type="submit">Apply</button>
+        <button class="btn" type="submit">Apply</button>
       </div>
     </form>
   </main>
