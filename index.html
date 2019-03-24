@@ -23,32 +23,46 @@
       <fieldset class="push pad-b-1-2">
         <legend class="giga push pad-b-1-4">Personal details</legend>
 
-        <label class="push-1-8" for="name">Full name</label>
-        <input id="name" name="name" required>
-        <p class="micro italic pad-t-1-8">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-        <label class="push-1-8" for="nickname">What should we call you?</label>
-        <input id="nickname" name="name">
-        <p class="micro italic pad-t-1-8">What all your friends call you, e.g. “Liz”.</p>
-        <label class="push-1-8" for="dob">Date of birth</label>
-        <input class="push" id="dob" type="date">
-        <label class="push-1-8" for="teesize">T-shirt size</label>
-        <select class="push" id="teesize">
-          <option value="">Select a t-shirt size</option>
-          <option>Fitted: XS</option>
-          <option>Fitted: S</option>
-          <option>Fitted: M</option>
-          <option>Fitted: L</option>
-          <option>Fitted: XL</option>
-          <option>Straight-cut: XS</option>
-          <option>Straight-cut: S</option>
-          <option>Straight-cut: M</option>
-          <option>Straight-cut: L</option>
-          <option>Straight-cut: XL</option>
-        </select>
-        <label class="push-1-8" for="email">Email</label>
-        <input class="push" id="email" type="email" required>
-        <label class="push-1-8" for="phone">Phone number <span>(optional)</span></label>
-        <input id="phone" type="tel">
+        <div class="grid">
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8" for="name">Full name</label>
+            <input id="name" name="name" required>
+            <p class="micro italic pad-t-1-8">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8" for="nickname">What should we call you?</label>
+            <input id="nickname" name="name">
+            <p class="micro italic pad-t-1-8">What all your friends call you, e.g. “Liz”.</p>
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8" for="dob">Date of birth</label>
+            <input class="push" id="dob" type="date">
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8" for="teesize">T-shirt size</label>
+            <select class="push" id="teesize">
+              <option value="">Select a t-shirt size</option>
+              <option>Fitted: XS</option>
+              <option>Fitted: S</option>
+              <option>Fitted: M</option>
+              <option>Fitted: L</option>
+              <option>Fitted: XL</option>
+              <option>Straight-cut: XS</option>
+              <option>Straight-cut: S</option>
+              <option>Straight-cut: M</option>
+              <option>Straight-cut: L</option>
+              <option>Straight-cut: XL</option>
+            </select>
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8" for="email">Email</label>
+            <input class="push" id="email" type="email" required>
+          </div>
+          <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <label class="push-1-8" for="phone">Phone number <span>(optional)</span></label>
+            <input id="phone" type="tel">
+          </div>
+        </div>
       </fieldset>
 
       <hr class="push pad-b">
@@ -131,7 +145,8 @@
 
       <hr class="push pad-b">
 
-      <div class="push pad-b">
+      <fieldset class="push pad-b">
+<legend class="hidden">nothing</legend>
         <div class="push-1-2">
           <h2 class="giga push-1-2">Do you have a valid driver’s license?</h2>
           <input id="license-y" type="radio" name="license">
@@ -155,20 +170,24 @@
           <input id="first-aid-n" type="radio" name="firt-aid">
           <label class="gutter-1-2" for="first-aid-n">No</label>
         </div>
-      </div>
+      </fieldset>
 
-      <hr class="push pad-b">
+      <hr class="push-1-4 pad-b-1-4">
 
       <div>
-        <label for="cmt">Please let us know any comments or questions you may have.<span> (optional)</span></label>
+        <label class="giga bold push-1-2 pad-t-2" for="cmt">Please let us know any comments or questions you may have.<span> (optional)</span></label>
         <textarea id="cmt"></textarea>
       </div>
+
+      <hr class="push-1-4 pad-b-1-4">
 
       <div>
         <button type="submit">Apply</button>
       </div>
     </form>
   </main>
-<footer><p>© Tree Hugger International Organization</p></footer>
+  <footer>
+    <p>© Tree Hugger International Organization</p>
+  </footer>
 </body>
 </html>

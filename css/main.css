@@ -14,3 +14,11 @@ fieldset {
 .block label {
   display: block;
 }
+
+textarea {
+  height: 10em;
+}
+
+hr {
+  border-color: #6e8c62;
+}
